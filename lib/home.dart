@@ -24,7 +24,7 @@ class _homeState extends State<home> {
 
   final List ListPage = [
     homepage(),
-    film(),
+    HomeScreen(),
     history(),
     profil(),
   ];

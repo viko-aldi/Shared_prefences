@@ -62,32 +62,10 @@ class _profilState extends State<profil> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text("Welcome ! $nama",
-            style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 21)),
-        SizedBox(
-          height: 10,
-        ),
-        FlutterLogo(
-          size: 80,
-        ),
-        SizedBox(
-          height: 5,
-        ),
         Text(
           nama,
           style: TextStyle(
               color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        Text(
-          email,
-          style: TextStyle(
-              color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
         ),
         SizedBox(
           height: 10,

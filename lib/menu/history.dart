@@ -40,23 +40,29 @@ class _history extends State<history> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Daftar Pengujung"),
-      ),
-      body: ListView.builder(
-          itemCount: listData.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage('${listData[index]['avatar']}'),
-                //child: Image.network('${listData}[index]['avatar']'),
-              ),
-              title: Text(
-                '${listData[index]['first_name']} ${listData[index]['last_name']}',
-              ),
-              subtitle: Text('${listData[index]['email']}'),
-            );
-          }),
-    );
+        appBar: AppBar(
+          title: Text("Daftar Pengujung"),
+        ),
+        body: ListView.builder(
+            itemCount: listData.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage('${listData[index]['avatar']}'),
+                  //child: Image.network('${listData}[index]['avatar']'),
+                ),
+                title: Text(
+                  '${listData[index]['first_name']} ${listData[index]['last_name']}',
+                ),
+                subtitle: Text('${listData[index]['email']}'),
+              );
+            }),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            // Add your onPressed code here!
+          },
+          child: Icon(Icons.add),
+          backgroundColor: Colors.blueGrey,
+        ));
   }
 }
